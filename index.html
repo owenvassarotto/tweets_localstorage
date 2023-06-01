@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio / Twitter</title>
+    <link rel="icon" href="https://cdn.icon-icons.com/icons2/1584/PNG/512/3721677-twitter_108058.png">
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/59e22f91b1.js" crossorigin="anonymous"></script>
+    <style>
+        .subrayado::before {
+            content: "";
+            position: absolute;
+            bottom: -14px;
+            left: -3px;
+            right: 0;
+            height: 4px;
+            border-radius: 10px;
+            width: 55px;
+            background-color: #1DA1F2;
+            /* Puedes personalizar el color del subrayado aquí */
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <div class="border border-y-0 border-zinc-800 h-full max-w-2xl m-auto">
+        <div class="border-b border-zinc-800 px-5 py-4 w-full">
+            <p class="text-xl font-bold mb-6">Inicio</p>
+            <div class="w-full flex justify-evenly">
+                <a href="#" class="font-semibold relative subrayado">Para ti</a>
+                <a href="#" class="font-semibold">Siguiendo</a>
+            </div>
+        </div>
+
+        <div class="px-5 py-3 flex w-full space-x-4 border-b border-zinc-800">
+            <img src="src/img/foto_perfil.jpg" alt="Foto pefil de twitter" class="w-14 h-14 rounded-full">
+
+            <form id="formulario" class="mt-3 w-full">
+                <div class="mb-1">
+                    <textarea id="tweet" class="bg-black text-xl outline-none placeholder-gray-500 w-full resize-none"
+                        placeholder="¡¿Qué está pasando?!"></textarea>
+                </div>
+                <!-- Icons -->
+                <div class="flex flex-col space-y-5 items-start sm:flex-row sm:justify-between sm:space-y-0 sm:items-center">
+                    <div class="flex space-x-5">
+                        <i class="fa-solid fa-image text-twitter cursor-pointer"></i>
+                        <i class="fa-solid fa-hashtag text-twitter cursor-pointer"></i>
+                        <i class="fa-solid fa-list-ul text-twitter cursor-pointer"></i>
+                        <i class="fa-regular fa-face-smile text-twitter cursor-pointer"></i>
+                        <i class="fa-regular fa-calendar text-twitter cursor-pointer"></i>
+                        <i class="fa-solid fa-location-dot text-twitter cursor-pointer"></i>
+                    </div>
+                    <button id="btn-twittear" class="bg-twitter px-4 py-1.5 rounded-full font-bold hover:opacity-90">Twittear</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="lista-tweets">
+
+            <!-- <div class="flex space-x-4 border-b border-zinc-800 px-5 py-3">
+                <img src="src/img/foto_perfil.jpg" alt="Foto pefil de twitter" class="w-14 h-14 rounded-full">
+                <div class="w-full">
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Owen Vassarotto 😎 <span class="font-normal text-gray-500">@owenvass</span>
+                        </p>
+                        <button id="btn-eliminar"><i class="fa-regular fa-trash-can text-twitter text-sm"></i></button>
+                    </div>
+                    <p>Hola gente hermosa, ¿cómo están hoy? 😀</p>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>
